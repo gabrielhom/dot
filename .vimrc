@@ -14,6 +14,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'raimondi/delimitmate'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -23,9 +24,10 @@ set hidden
 set shortmess+=F
 set noshowmode
 set number
+set tabstop=4
 set shiftwidth=4 
+set expandtab
 set smartindent
-set smarttab        
 set softtabstop=4    
 
 
