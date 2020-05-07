@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'raimondi/delimitmate'
 Plug 'dense-analysis/ale'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
