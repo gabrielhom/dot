@@ -69,7 +69,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm copyfile web-search yarn zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git copyfile zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,12 +96,18 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias vol="amixer set Master"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#export PATH="/home/gabriel/.pyenv/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
 
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stamps section
@@ -109,10 +115,8 @@ SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   host          # Hostname section
   git           # Git section (git_branch + git_status)
-  hg            # Mercurial section (hg_branch  + hg_status)
   package       # Package version
   node          # Node.js section
-  dotnet        # .NET section
   exec_time     # Execution time
   line_sep      # Line break
   vi_mode       # Vi-mode indicator
