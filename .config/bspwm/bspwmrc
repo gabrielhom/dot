@@ -24,7 +24,7 @@ bspc rule -a Lxappearance state=floating follow=on
 
 $HOME/.config/polybar/launch.sh
 ~/.fehbg
-mpd &
+mopidy &
 dunst &
 picom &
 ./.config/bspwm/float.sh &
