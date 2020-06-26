@@ -1,4 +1,4 @@
-set nocompatible 
+set nocompatible
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -26,10 +26,10 @@ set shortmess+=F
 set noshowmode
 set number
 set tabstop=4
-set shiftwidth=4 
+set shiftwidth=4
 set expandtab
 set smartindent
-set softtabstop=4    
+set softtabstop=4
 
 
 :command! WQ wq
@@ -42,5 +42,5 @@ highlight GitGutterAdd    ctermfg=8
 highlight GitGutterChange ctermfg=8
 highlight GitGutterDelete ctermfg=8
 
-let g:airline_theme='base16'
+let g:airline_theme='minimalist'
 
