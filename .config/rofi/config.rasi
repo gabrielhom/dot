@@ -1,0 +1,14 @@
+configuration {
+    modi: "window,drun,run,ssh";
+    font: "Siji 9";
+    columns: 2;
+    width: 700;
+    terminal: "konsole";
+    drun-match-fields: "name,generic,exec,categories";
+    sidebar-mode: true;
+    show-icons: true;
+    icon-theme: "Chicago95";
+    combi-modi: "drun,run,ssh";
+
+}
+@import "~/.config/rofi/theme.rasi"
