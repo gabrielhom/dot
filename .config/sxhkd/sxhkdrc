@@ -42,7 +42,7 @@ control + Print
         scrot -u -e 'xclip -selection clipboard -t image/png < $f'
 super + Print
         scrot '/home/gabriel/Imagens/Screenshots/%Y-%m-%d-%H-%M-%S.png'
-supe + control + Print
+super + control + Print
         scrot -u '/home/gabriel/Imagens/Screenshots/%Y-%m-%d-%H-%M-%S.png'
 # gaps
 super + g

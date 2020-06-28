@@ -21,6 +21,10 @@ bspc rule -a vlc state=floating desktop='^6' follow=on
 bspc rule -a qBittorrent desktop='^7' follow=on
 bspc rule -a feh state=floating follow=on
 bspc rule -a Lxappearance state=floating follow=on
+bspc rule -a Steam state=floating desktop='^7' follow=on
+
+# blocking annoying kde plasma shortcut conflicts
+qdbus org.kde.kglobalaccel /kglobalaccel blockGlobalShortcuts true
 
 $HOME/.config/polybar/launch.sh
 ~/.fehbg
