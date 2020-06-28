@@ -37,9 +37,9 @@ super + {F4,F5}
 Print
         scrot -e 'xclip -selection clipboard -t image/png < $f'
 super + shift + s
-        scrot -s -e 'xclip -selection clipboard -t image/png < $f'
+        sleep 1 && scrot -s -e 'xclip -selection clipboard -t image/png < $f'
 control + Print
-        sleep 1 && scrot -u -e 'xclip -selection clipboard -t image/png < $f'
+        scrot -u -e 'xclip -selection clipboard -t image/png < $f'
 super + Print
         scrot '/home/gabriel/Imagens/Screenshots/%Y-%m-%d-%H-%M-%S.png'
 supe + control + Print
