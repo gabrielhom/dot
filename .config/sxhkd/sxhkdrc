@@ -35,12 +35,15 @@ super + {F4,F5}
 
 # screenshot keybindings
 Print
+        scrot -e 'xclip -selection clipboard -t image/png < $f'
+super + shift + s
+        scrot -s -e 'xclip -selection clipboard -t image/png < $f'
+control + Print
+        sleep 1 && scrot -u -e 'xclip -selection clipboard -t image/png < $f'
+super + Print
         scrot '/home/gabriel/Imagens/Screenshots/%Y-%m-%d-%H-%M-%S.png'
-shift + Print
-	 sleep 1 && scrot -s '/home/gabriel/Imagens/Screenshots/%Y-%m-%d-%H-%M-%S.png'
-ctrl + Print
+supe + control + Print
         scrot -u '/home/gabriel/Imagens/Screenshots/%Y-%m-%d-%H-%M-%S.png'
-
 # gaps
 super + g
     bspc config window_gap 0
