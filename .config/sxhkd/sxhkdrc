@@ -6,11 +6,10 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run -b -fn "xos4 terminus" -nb "#22222f" -nf "#d8dee9" -sb "#ee7674" -sf "#d8dee9"
-	
+    rofi -show drun	
 # apps
 super + shift + {b,c,f,m,v}
-        {firefox,code,pcmanfm,konsole -e ncmpcpp,konsole -e vim}
+        {firefox,code,thunar,konsole -e ncmpcpp,konsole -e vim}
 
 # brightness keybindings
 XF86MonBrightness{Up,Down}
@@ -40,7 +39,7 @@ Print
 shift + Print
 	 sleep 1 && scrot -s '/home/gabriel/Imagens/Screenshots/%Y-%m-%d-%H-%M-%S.png'
 ctrl + Print
-        scrot -C
+        scrot -u '/home/gabriel/Imagens/Screenshots/%Y-%m-%d-%H-%M-%S.png'
 
 # gaps
 super + g
